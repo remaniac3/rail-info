@@ -4,35 +4,64 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title>Lines Toggler</title>
 
+		<link href="https://fonts.googleapis.com/css?family=Exo:900i&display=swap" rel="stylesheet">
+
 		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
 
 	<main>
 		<section id="entity">
-			<div id="contTogglersMaster">
-				<div class="contTogglers"><a href="" class="button buttonLocal">Hello</a></div>
-				<div class="contTogglers"><a href="" class="button buttonCommRapid">From The</a></div>
-				<div class="contTogglers"><a href="" class="button buttonSpecRapid">Other Side</a></div>
+
+			<div id="routeTogglers">
+				<div class="routeBtnGroup">
+					<button class="buttonLocal">LOCAL</button>
+					<button class="buttonCommRapid">COMMUTER RAPID</button>
+					<button class="buttonSpecRapid">SPECIAL RAPID</button>
+				</div>
 			</div>
 
 			<div id="contDiagram">
 
-				<div class="routeRow">
-					<div class="routeCol-3">
-						<div class="pointMain pointSpecRapid"></div>
-					</div>
-					<div class="routeCol-9">
-						Pen
-					</div>
-				</div>
-				<div class="routeRow">
-					<div class="routeCol-3">
-						<div class="pointMain pointCommRapid"></div>
-					</div>
-					<div class="routeCOl-9">
-						Pineapple
-					</div>
-				</div>
+				<table class="table-center">
+					<tbody>
+						<tr>
+							<td class="table-prop table-line-groups">
+								<div>
+									<div class="table-line-specRapid"></div>
+									<div class="table-line-commRapid"></div>
+									<div class="table-line-local"></div>
+								</div>
+								<div class="pointMain pointSpecRapid"></div></td>
+							<td class="table-prop">Pen</td>
+						</tr>
+
+						<tr class="tr-visibility">
+							<td class="table-prop"><div class="pointMain pointCommRapid"></div></td>
+							<td class="table-prop">Pineapple</td>
+						</tr>
+
+						<tr>
+							<td class="table-prop"><div class="pointMain pointLocal"></div></td>
+							<td class="table-prop">Apple</td>
+						</tr>
+
+						<tr>
+							<td class="table-prop"><div class="pointMain pointSpecRapid"></div></td>
+							<td class="table-prop">Orange</td>
+						</tr>
+
+						<tr>
+							<td class="table-prop"><div class="pointMain pointLocal"></div></td>
+							<td class="table-prop">Smooth</td>
+						</tr>
+
+						<tr>
+							<td class="table-prop"><div class="pointMain pointSpecRapid"></div></td>
+							<td class="table-prop">Sade</td>
+						</tr>									
+					</tbody>
+				</table>
+												
 			</div>
 		</section>
 	</main>
