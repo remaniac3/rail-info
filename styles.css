@@ -79,53 +79,97 @@ a {
 
 /******* POINTS (TABLE)******/
 
+.line-diagram-header {
+	text-align: center;
+}
+
 .table-center {
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .table-prop {
-	padding: 1em 1em;
+	padding: 1em;
 }
 
 .table-line-groups {
 	position: absolute;
 }
 
-.table-line-specRapid::before {
-  content: '';
+.table-line-specRapid {
   position: absolute;
   top: 30%;
   left: 22%;
   width: 10px;
   height: 530%;
   background: rgb(255, 0, 0);
-  z-index: -1;
+  z-index: -10;
 }
 
-.table-line-commRapid::before {
-  content: '';
+.table-line-commRapid {
   position: absolute;
   top: 30%;
   left: 46.5%;
   width: 10px;
   height: 530%;
   background: rgb(0, 128, 0);
-  z-index: -1;
+  z-index: -10;
 }
 
-.table-line-local::before {
-  content: '';
+.table-line-local {
   position: absolute;
   top: 30%;
   left: 71%;
   width: 10px;
   height: 530%;
   background: rgb(130, 130, 130);
-  z-index: -1;
+  z-index: -10;
 }
 
-.tr-visibility {
+
+/******* LINE ICONS *******/
+
+.td-line-icons {
+	text-align: right;
+}
+
+.line-icon {
+	height: 1.5em;
+	width: 1.5em;
+	line-height: 1.5em;
+	border-radius: 3px;
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.line-icon-lg {
+	height: 2em;
+	width: 2em;
+	line-height: 2em;
+}
+
+.line-name {
+	padding-left: 0.5em;
+	color: rgb(153, 102, 204);
+	font-weight: bold;
+}
+
+.line-icon-A {
+	background-color: rgb(153, 102, 204);
+}
+
+.line-icon-C {
+	background-color: rgb(255, 99, 71);
+}
+
+.line-icon-R {
+	background-color: rgb(178, 34, 34);
+}
+
+.line-icon-E {
+	background-color: rgb(60, 179, 113);
 }
 
 
@@ -196,11 +240,31 @@ a {
 }
 
 
+/******* FREQUENCY VISIBILITY *******/
+
+.freq-invisible {
+	opacity: 10%;
+	transition: opacity ease-out 0.5s;
+}
+
+.freq-visible {
+	opacity: 100%;
+	transition: opacity ease-out 0.5s;
+}
+
+
 /******* @MEDIA *******/
 
 @media (max-width: 768px) {
 
 	#contTogglersMaster {
 		grid-template-columns: repeat(3, 1fr);
+	}
+
+}
+
+@media (max-width: 800px) {
+	.routeBtnGroup button {
+		margin: 0.5em;
 	}
 }

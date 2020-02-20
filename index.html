@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title>Lines Toggler</title>
 
@@ -14,50 +15,64 @@
 
 			<div id="routeTogglers">
 				<div class="routeBtnGroup">
-					<button class="buttonLocal">LOCAL</button>
-					<button class="buttonCommRapid">COMMUTER RAPID</button>
-					<button class="buttonSpecRapid">SPECIAL RAPID</button>
+					<button class="buttonLocal" onclick="togglerButtonLocal()">LOCAL</button>
+					<button class="buttonCommRapid" onclick="togglerButtonCommRapid()">COMMUTER RAPID</button>
+					<button class="buttonSpecRapid" onclick="togglerButtonSpecRapid()">SPECIAL RAPID</button>
 				</div>
 			</div>
 
 			<div id="contDiagram">
-
+				<div class="line-diagram-header">
+					<div class="line-icon line-icon-lg line-icon-A">A</div>
+					<span class="line-name">AMETHYST LINE</span>
+				</div>
 				<table class="table-center">
 					<tbody>
-						<tr>
+						<tr class="freq-exc-nil freq-visible">
 							<td class="table-prop table-line-groups">
 								<div>
-									<div class="table-line-specRapid"></div>
-									<div class="table-line-commRapid"></div>
-									<div class="table-line-local"></div>
+									<div class="table-line-specRapid freq-visible"></div>
+									<div class="table-line-commRapid freq-visible"></div>
+									<div class="table-line-local freq-visible"></div>
 								</div>
 								<div class="pointMain pointSpecRapid"></div></td>
 							<td class="table-prop">Pen</td>
+							<td class="table-prop td-line-icons">
+								<div class="line-icon line-icon-C" alt="Carnelian Line">C</div>
+								<div class="line-icon line-icon-E" alt="Emerald Line">E</div>					
+								<div class="line-icon line-icon-R" alt="Ruby Line">R</div>
+							<td>
 						</tr>
 
-						<tr class="tr-visibility">
+						<tr class="freq-exc-specRapid freq-visible">
 							<td class="table-prop"><div class="pointMain pointCommRapid"></div></td>
 							<td class="table-prop">Pineapple</td>
+							<td class="table-prop td-line-icons">
+								<div class="line-icon line-icon-E" alt="Emerald Line">E</div>					
+							<td>							
 						</tr>
 
-						<tr>
+						<tr class="freq-local freq-visible">
 							<td class="table-prop"><div class="pointMain pointLocal"></div></td>
 							<td class="table-prop">Apple</td>
 						</tr>
 
-						<tr>
+						<tr class="freq-exc-nil freq-visible">
 							<td class="table-prop"><div class="pointMain pointSpecRapid"></div></td>
 							<td class="table-prop">Orange</td>
 						</tr>
 
-						<tr>
+						<tr class="freq-local freq-visible">
 							<td class="table-prop"><div class="pointMain pointLocal"></div></td>
 							<td class="table-prop">Smooth</td>
 						</tr>
 
-						<tr>
+						<tr class="freq-exc-nil freq-visible">
 							<td class="table-prop"><div class="pointMain pointSpecRapid"></div></td>
 							<td class="table-prop">Sade</td>
+							<td class="table-prop td-line-icons">
+								<div class="line-icon line-icon-C" alt="Carnelian Line">C</div>
+							<td>							
 						</tr>									
 					</tbody>
 				</table>
@@ -65,4 +80,6 @@
 			</div>
 		</section>
 	</main>
+
+	<script src="js/scripts.js" charset="utf-8"></script>
 </html>	
