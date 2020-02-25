@@ -57,7 +57,7 @@ a {
 /******* POINTS *******/
 
 .pointMain {
-	height: 20px;
+	height: 15px;
 	background-color: #FFFFFF;
 	border-radius: 1em;
 	border-style: solid;
@@ -65,15 +65,15 @@ a {
 }
 
 .pointSpecRapid {
-	width: 80px;
+	width: 45px;
 }
 
 .pointCommRapid {
-	width: 50px;
+	width: 30px;
 }
 
 .pointLocal {
-	width: 20px;
+	width: 15px;
 }
 
 
@@ -89,7 +89,7 @@ a {
 }
 
 .table-prop {
-	padding: 1em;
+	padding: 1em 0.5em;
 }
 
 .table-line-groups {
@@ -99,9 +99,9 @@ a {
 .table-line-specRapid {
   position: absolute;
   top: 30%;
-  left: 22%;
-  width: 10px;
-  height: 530%;
+  left: 24%;
+  width: 5px;
+  height: 1060%;
   background: rgb(255, 0, 0);
   z-index: -10;
 }
@@ -109,9 +109,9 @@ a {
 .table-line-commRapid {
   position: absolute;
   top: 30%;
-  left: 46.5%;
-  width: 10px;
-  height: 530%;
+  left: 46%;
+  width: 5px;
+  height: 1060%;
   background: rgb(0, 128, 0);
   z-index: -10;
 }
@@ -119,11 +119,20 @@ a {
 .table-line-local {
   position: absolute;
   top: 30%;
-  left: 71%;
-  width: 10px;
-  height: 530%;
+  left: 68%;
+  width: 5px;
+  height: 1060%;
   background: rgb(130, 130, 130);
   z-index: -10;
+}
+
+.station-code {
+	height: 1.5em;
+	width: 2.5em;
+	line-height: 1.5em;
+	text-align: center;
+	background-color: rgb(153, 102, 204);
+	color: #FFF;
 }
 
 
@@ -214,30 +223,15 @@ a {
 	background-color: rgb(130, 130, 130);
 }
 
-/*.buttonLocal:hover {
-	background-color: rgb(100, 100, 100);
-	transition: background-color ease-out 0.5s;
-}
-*/
 .buttonCommRapid {
 	display: table-cell;
 	background-color: rgb(0, 128, 0);
 }
 
-/*.buttonCommRapid:hover {
-	background-color: rgb(0, 98, 0);
-	transition: background-color ease-out 0.5s;
-}*/
-
 .buttonSpecRapid {
 	display: table-cell;
 	background-color: rgb(255, 0, 0);
 }
-
-/*.buttonSpecRapid:hover {
-	background-color: rgb(215, 0, 0);
-	transition: background-color ease-out 0.5s;
-}*/
 
 
 /******* FREQUENCY VISIBILITY *******/
