@@ -52,6 +52,16 @@ a {
 	text-align: left;
 }
 
+.iframe-container {
+	overflow: hidden;
+}
+
+.iframe-map {
+	width: 100%;
+	overflow: hidden;
+	border: none;
+}
+
 
 
 /******* POINTS *******/
